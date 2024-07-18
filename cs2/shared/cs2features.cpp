@@ -150,8 +150,12 @@ inline void cs2::features::update_settings(void)
 	switch (crosshair_alpha)
 	{
 	case 200:
-		config::visuals_enabled = 0;
-		config::aimbot_enabled = 0;
+		config::aimbot_multibone = 1;
+		config::aimbot_fov = 3.5;
+		config::aimbot_smooth = 3.5;
+		config::triggerbot_button = 600;
+		config::visualize_hitbox = 1;
+		config::standalone_rcs = 0;
 		break;
 	case 201:
 		config::aimbot_fov = 1.5;
